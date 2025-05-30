@@ -310,10 +310,10 @@ if has('nvim')
   "
   " Default Diagnostic highlights
   " Dark background for virtual text
-  call s:h("DiagnosticHint", { "fg": s:purple, "bg": s:bg_dark })
-  call s:h("DiagnosticInfo", { "fg": s:blue, "bg": s:bg_dark })
-  call s:h("DiagnosticWarn", { "fg": s:yellow, "bg": s:bg_dark })
-  call s:h("DiagnosticError", { "fg": s:red, "bg": s:bg_dark })
+  call s:h("DiagnosticHint", { "fg": s:purple })
+  call s:h("DiagnosticInfo", { "fg": s:blue })
+  call s:h("DiagnosticWarn", { "fg": s:yellow })
+  call s:h("DiagnosticError", { "fg": s:red })
   " For signs and floating menus drop the dark background
   call s:h("DiagnosticSignHint", { "fg": s:purple })
   call s:h("DiagnosticSignWarn", { "fg": s:yellow })
@@ -558,10 +558,10 @@ call s:h("qfLineNr",      {"fg": s:norm_subtle})
 hi link SignifySignAdd              LineNr
 hi link SignifySignDelete           LineNr
 hi link SignifySignChange           LineNr
-call s:h("GitGutterAdd",{"fg": s:green, "bg": s:bg})
-call s:h("GitGutterDelete",{"fg": s:red, "bg": s:bg})
-call s:h("GitGutterChange",{"fg": s:yellow, "bg": s:bg})
-call s:h("GitGutterChangeDelete",{"fg": s:red, "bg": s:bg})
+call s:h("GitGutterAdd",{"fg": s:green })
+call s:h("GitGutterDelete",{"fg": s:red })
+call s:h("GitGutterChange",{"fg": s:yellow })
+call s:h("GitGutterChangeDelete",{"fg": s:red })
 hi link GitSignsAdd GitGutterAdd
 hi link GitSignsChange GitGutterChange
 hi link GitSignsDelete GitGutterDelete
